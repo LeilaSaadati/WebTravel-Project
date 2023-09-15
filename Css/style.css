@@ -73,6 +73,10 @@ header .search-bar-container {
   display: flex;
   align-items: center;
   z-index: 1001;
+  //*clip-path: polygon(0 0, 100% 0, 100%0, 0 0);*//
+}
+header .search-bar-container.active {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 header .search-bar-container #search-bar {
   width: 100%;
@@ -82,12 +86,21 @@ header .search-bar-container #search-bar {
   font-size: 1.7rem;
   border-radius: 0.5rem;
 }
+.change-my-color-search-btn {
+  margin-left: 1.5rem;
+  fill: #fff;
+  cursor: pointer;
+  font-size: 2rem;
+}
 header .search-bar-container label {
   color: #fff;
   cursor: pointer;
   font-size: 3rem;
   margin-left: 1.5rem;
 }
-header .search-bar-container label:hover {
+header .change-my-color-search-btn label:hover {
   color: var(--orange);
+}
+body {
+  height: 200rem;
 }
