@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebTravel Project</title>
-    <link rel="stylesheet" href="font/fontawesome-free-6.4.0-web/" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
     <link rel="stylesheet" href="Css/style.css" />
   </head>
   <body>
@@ -68,7 +71,24 @@
       </form>
     </header>
     <!-- header section end -->
+
     <!-- login form container -->
+
+    <div class="login-form-container">
+      <i class="fa-solid fa-xmark" id="form-close"></i>
+
+      <form action="">
+        <h3>login</h3>
+        <input type="email" class="box" placeholder="enter your email" />
+        <input type="password" class="box" placeholder="enter your password" />
+        <input type="submit" value="login now" class="btn" />
+        <input type="checkbox" id="remember" />
+        <label for="remember">remember me</label>
+        <p>forget password? <a href="#">click here</a></p>
+        <p>don't have and account? <a href="#">register now</a></p>
+      </form>
+    </div>
+
     <script src="JS/script.js"></script>
   </body>
 </html>
